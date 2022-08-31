@@ -1,0 +1,12 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:/Users/jorda/.jdks/openlogic-openjdk-8u342-b07-windows-64",
+            "default": true
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.dependency.packagePresentation": "hierarchical"
+}
