@@ -1,5 +1,6 @@
 package TheTerrarianMod;
 
+import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
 
@@ -28,10 +29,12 @@ import java.util.Collections;
 import java.util.Optional;
 import java.util.Set;
 
+import TheTerrarianMod.cards.BaseCard;
 import TheTerrarianMod.character.TheTerrarian;
 
 @SpireInitializer
 public class TheTerrarianMod implements
+        EditCardsSubscriber,
         EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
@@ -199,5 +202,14 @@ public class TheTerrarianMod implements
     @Override
     public void receiveEditCharacters() {
         BaseMod.addCharacter(new TheTerrarian(), CHAR_SELECT_BUTTON, CHAR_SELECT_PORTRAIT, TheTerrarian.Enums.THE_TERRARIAN);        
+    }
+
+    @Override
+    public void receiveEditCards() {
+        new AutoAdd(modID) //Loads files from this mod
+        .packageFilter(BaseCard.class) //In the same package as this class
+        .setDefaultSeen(true) //And marks them as seen in the compendium
+        .cards(); //Adds the cards
+        
     }
 }

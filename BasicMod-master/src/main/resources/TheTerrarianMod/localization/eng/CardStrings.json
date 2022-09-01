@@ -7,5 +7,47 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:Bee": {
+    "NAME": "Bee",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Poison."
+  },
+  "${modID}:Beenade": {
+    "NAME": "Beenade",
+    "DESCRIPTION": "Add *Bees to your hand until it is full.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add *Bees to your hand until its full."
+  },
+  "${modID}:Boomstick": {
+    "NAME": "Boomstick",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to ALL enemies."
+  },
+  "${modID}:GrapplingHook": {
+    "NAME": "Grappling Hook",
+    "DESCRIPTION": "Gain !B! Block. NL MAKE THIS COMMON!!!!"
+  },
+  "${modID}:Megashark": {
+    "NAME": "Megashark",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
+  },
+  "${modID}:Muramasa": {
+    "NAME": "Muramasa",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "${modID}:ShieldOfCthulu": {
+    "NAME": "Shield of Cthulu",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "${modID}:SmashPots": {
+    "NAME": "Smash Pots",
+    "DESCRIPTION": "Ethereal. NL Gain between !M! and 25 gold. NL Exhaust."
+  },
+  "${modID}:TheBeekeeper": {
+    "NAME": "The Beekeeper",
+    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Bee to your hand. NL MAKE THIS COMMON!!!!",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add !M! *Bees to your hand. NL MAKE THIS COMMON!!!!"
+  },
+  "${modID}:VampireKnives": {
+    "NAME": "Vampire Knives",
+    "DESCRIPTION": "Deal !D! damage !M! times to ALL enemies. NL Heal HP equal to unblocked damage. NL Exhaust."
   }
 }
