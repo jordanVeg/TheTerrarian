@@ -19,5 +19,26 @@
       "multiword_keywords"
     ],
     "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest should use _ to replace spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Barbed",
+    "NAMES": [
+      "barbed"
+    ],
+    "DESCRIPTION": "At the end of your turn take #ydamage equal to the stacks of this affect and remove all stacks."
+  },
+  {
+    "PROPER_NAME": "Crimson",
+    "NAMES": [
+      "crimson"
+    ],
+    "DESCRIPTION": "Add #b1 to the #yDamage and #yBlock of this card. NL When you play this card gain #b1 #yBarbed. NL When #yDrawn infect all adjacent cards with this affect."
+  },
+  {
+    "PROPER_NAME": "Sharpened",
+    "NAMES": [
+      "sharpened"
+    ],
+    "DESCRIPTION": "#yAttacks deal #b25% more damage."
   }
 ]

@@ -1,8 +1,14 @@
 package TheTerrarianMod;
 
-import basemod.AutoAdd;
-import basemod.BaseMod;
-import basemod.interfaces.*;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Optional;
+import java.util.Set;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.scannotation.AnnotationDB;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -13,24 +19,27 @@ import com.evacipated.cardcrawl.modthespire.Patcher;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.localization.*;
-
-import TheTerrarianMod.util.GeneralUtils;
-import TheTerrarianMod.util.KeywordInfo;
-import TheTerrarianMod.util.TextureLoader;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.scannotation.AnnotationDB;
-
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Optional;
-import java.util.Set;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 
 import TheTerrarianMod.cards.BaseCard;
 import TheTerrarianMod.character.TheTerrarian;
+import TheTerrarianMod.util.GeneralUtils;
+import TheTerrarianMod.util.KeywordInfo;
+import TheTerrarianMod.util.TextureLoader;
+import basemod.AutoAdd;
+import basemod.BaseMod;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
 
 @SpireInitializer
 public class TheTerrarianMod implements
@@ -209,7 +218,6 @@ public class TheTerrarianMod implements
         new AutoAdd(modID) //Loads files from this mod
         .packageFilter(BaseCard.class) //In the same package as this class
         .setDefaultSeen(true) //And marks them as seen in the compendium
-        .cards(); //Adds the cards
-        
+        .cards(); //Adds the cards        
     }
 }

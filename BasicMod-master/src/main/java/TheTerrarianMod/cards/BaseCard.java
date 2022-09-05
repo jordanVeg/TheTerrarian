@@ -1,7 +1,5 @@
 package TheTerrarianMod.cards;
 
-import basemod.abstracts.CustomCard;
-
 import static TheTerrarianMod.TheTerrarianMod.makeID;
 import static TheTerrarianMod.util.TextureLoader.getCardTextureString;
 
@@ -11,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 
 import TheTerrarianMod.TheTerrarianMod;
 import TheTerrarianMod.util.CardInfo;
+import basemod.abstracts.CustomCard;
 
 
 public abstract class BaseCard extends CustomCard {

@@ -4,5 +4,21 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:Barbed": {
+    "NAME": "Barbed",
+    "DESCRIPTIONS": [
+      "Take #b",
+      " damage at the end of this turn."
+    ]
+  },
+  "${modID}:Sharpened": {
+    "NAME": "Sharpened",
+    "DESCRIPTIONS": [
+      "#yAttacks deal #b25% more damage",
+      " this turn.",
+      " for the next #b",
+      " turns."
+    ]
   }
 }

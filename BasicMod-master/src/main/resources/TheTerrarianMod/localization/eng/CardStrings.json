@@ -33,6 +33,14 @@
     "NAME": "Muramasa",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
+  "${modID}:PanicNecklace": {
+    "NAME": "Panic Necklace",
+    "DESCRIPTION": "Gain !B! Block. NL Next Turn gain !M! Block."
+  },
+  "${modID}:SharpeningStation": {
+    "NAME": "Sharpening Station",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! theterrarianmodid:Sharpened."
+  },
   "${modID}:ShieldOfCthulu": {
     "NAME": "Shield of Cthulu",
     "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
@@ -45,6 +53,10 @@
     "NAME": "The Beekeeper",
     "DESCRIPTION": "Deal !D! damage. NL Add !M! *Bee to your hand. NL MAKE THIS COMMON!!!!",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add !M! *Bees to your hand. NL MAKE THIS COMMON!!!!"
+  },
+  "${modID}:TheUndertaker": {
+    "NAME": "The Undertaker",
+    "DESCRIPTION": "Deal !D! Damage. NL Draw !M! Card."
   },
   "${modID}:VampireKnives": {
     "NAME": "Vampire Knives",
