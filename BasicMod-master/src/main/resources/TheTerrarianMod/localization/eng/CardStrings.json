@@ -29,13 +29,17 @@
     "NAME": "Megashark",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
   },
+  "${modID}:MagicMirror": {
+    "NAME": "Magic Mirror",
+    "DESCRIPTION": "Next turn, draw !M! cards and gain 1 [E]. NL End your turn."
+  },
   "${modID}:Muramasa": {
     "NAME": "Muramasa",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
   "${modID}:PanicNecklace": {
     "NAME": "Panic Necklace",
-    "DESCRIPTION": "Gain !B! Block. NL Next Turn gain !M! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Next Turn gain !B! - 2 Block."
   },
   "${modID}:SharpeningStation": {
     "NAME": "Sharpening Station",
@@ -47,12 +51,16 @@
   },
   "${modID}:SmashPots": {
     "NAME": "Smash Pots",
-    "DESCRIPTION": "Ethereal. NL Gain between !M! and 25 gold. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theterrarianmodid:Platinum."
   },
   "${modID}:TheBeekeeper": {
     "NAME": "The Beekeeper",
     "DESCRIPTION": "Deal !D! damage. NL Add !M! *Bee to your hand. NL MAKE THIS COMMON!!!!",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add !M! *Bees to your hand. NL MAKE THIS COMMON!!!!"
+  },
+  "${modID}:TheBeesKnees": {
+    "NAME": "The Bees Knees",
+    "DESCRIPTION": "Add !M! *Bees to your hand."
   },
   "${modID}:TheUndertaker": {
     "NAME": "The Undertaker",

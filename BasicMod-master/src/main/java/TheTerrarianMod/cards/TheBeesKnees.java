@@ -10,45 +10,36 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import TheTerrarianMod.character.TheTerrarian;
 import TheTerrarianMod.util.CardInfo;
 
-public class Beenade extends BaseCard{
+public class TheBeesKnees extends BaseCard{
 
     private final static CardInfo cardInfo = new CardInfo(
-            "Beenade",
+            "TheBeesKnees",
             1, 
             CardType.SKILL,
             CardTarget.SELF,
-            CardRarity.RARE,
+            CardRarity.COMMON,
             TheTerrarian.Enums.CARD_COLOR
     );
     public static final String ID = makeID(cardInfo.baseId);
-
-    private static int emptyCardsInHand;
     
-    public Beenade() {
+    private static final int MAGIC = 3;
+    private static final int UPG_MAGIC = 1;
+
+    
+    public TheBeesKnees() {
         super(cardInfo);
+        setMagic(MAGIC, UPG_MAGIC);
         this.cardsToPreview = new Bee();
     }
     
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        emptyCardsInHand =  10 - (p.hand.group.size()-1);
-        addToBot(new MakeTempCardInHandAction(new Bee(), emptyCardsInHand));
+        addToBot(new MakeTempCardInHandAction(new Bee(), magicNumber));
     }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-           this.upgradeName();
-           this.selfRetain = true;
-           this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-           this.initializeDescription();
-        }
-        super.upgrade();
-  
-     }
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new Beenade();
+        return new TheBeesKnees();
     }
     
 }

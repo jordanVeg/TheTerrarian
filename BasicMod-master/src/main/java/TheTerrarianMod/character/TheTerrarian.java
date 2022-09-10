@@ -23,6 +23,8 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
+import TheTerrarianMod.cards.SmashPots;
+
 import static TheTerrarianMod.TheTerrarianMod.*;
 
 import java.util.ArrayList;
@@ -85,6 +87,7 @@ public class TheTerrarian extends CustomPlayer {
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Neutralize.ID);
+        retVal.add(SmashPots.ID);
 
         return retVal;
     }

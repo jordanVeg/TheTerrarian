@@ -12,6 +12,12 @@
       " damage at the end of this turn."
     ]
   },
+  "${modID}:Platinum": {
+    "NAME": "Platinum",
+    "DESCRIPTIONS": [
+      "Ooooh Shiny!"
+    ]
+  },
   "${modID}:Sharpened": {
     "NAME": "Sharpened",
     "DESCRIPTIONS": [
