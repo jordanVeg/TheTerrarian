@@ -41,6 +41,16 @@
     "NAME": "Panic Necklace",
     "DESCRIPTION": "Gain !B! Block. NL Next Turn gain !B! - 2 Block."
   },
+  "${modID}:ProtectTheBase": {
+    "NAME": "Protect The Base",
+    "DESCRIPTION": "theterrarianmodid:Pure. NL Gain !B! Block. NL theterrarianmodid:Purify up to !M! card in your hand.",
+    "UPGRADE_DESCRIPTION": "theterrarianmodid:Pure. NL Gain !B! Block. NL theterrarianmodid:Purify up to !M! cards in your hand."
+  },
+  "${modID}:Rally": {
+    "NAME": "Rally",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile to your hand."
+  },
   "${modID}:SharpeningStation": {
     "NAME": "Sharpening Station",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! theterrarianmodid:Sharpened."
@@ -69,5 +79,17 @@
   "${modID}:VampireKnives": {
     "NAME": "Vampire Knives",
     "DESCRIPTION": "Deal !D! damage !M! times to ALL enemies. NL Heal HP equal to unblocked damage. NL Exhaust."
+  },
+  "${modID}:ViciousBunny": {
+    "NAME": "Vicious Bunny",
+    "DESCRIPTION": "Apply !M! Weak."
+  },
+  "${modID}:ViciousCritters": {
+    "NAME": "Vicious Critters",
+    "DESCRIPTION": "Choose one: NL Apply !M! Weak, Apply !M! Vulnerable."
+  },
+  "${modID}:ViciousGoldfish": {
+    "NAME": "Vicious Goldfish",
+    "DESCRIPTION": "Apply !M! Vulnerable."
   }
 }

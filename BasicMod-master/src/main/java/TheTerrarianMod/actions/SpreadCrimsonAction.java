@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import TheTerrarianMod.modifiers.CrimsonModifier;
+import TheTerrarianMod.tags.CustomTags;
 import basemod.helpers.CardModifierManager;
 
 public class SpreadCrimsonAction extends AbstractGameAction {
@@ -28,14 +29,14 @@ public class SpreadCrimsonAction extends AbstractGameAction {
                     /* Only Spread to next card if it is between 0 and HandSize-1 */
                     if(i >= 0 && i < this.hand.size()-1) {
                         this.nextCard = (AbstractCard)this.hand.get(i+1);
-                        if (!CardModifierManager.hasModifier(nextCard, "TheTerrarianModID:CrimsonModifier")){
+                        if (!CardModifierManager.hasModifier(nextCard, "TheTerrarianModID:CrimsonModifier") && !nextCard.hasTag(CustomTags.PURE)) {
                             CardModifierManager.addModifier(nextCard, new CrimsonModifier());
                         }
                     }
                     /* Only Spread to next card if it is between 1 and HandSize */
                     if (i > 0 && i <= this.hand.size()-1) {
                         this.prevCard = (AbstractCard)this.hand.get(i-1);
-                        if (!CardModifierManager.hasModifier(prevCard, "TheTerrarianModID:CrimsonModifier")){
+                        if (!CardModifierManager.hasModifier(prevCard, "TheTerrarianModID:CrimsonModifier") && !prevCard.hasTag(CustomTags.PURE)) {
                             CardModifierManager.addModifier(prevCard, new CrimsonModifier());
                         }
                     }

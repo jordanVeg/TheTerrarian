@@ -42,6 +42,20 @@
     "DESCRIPTION": "Ooooh Shiny!"
   },
   {
+    "PROPER_NAME": "Pure",
+    "NAMES": [
+      "pure"
+    ],
+    "DESCRIPTION": "Cannot be infected with #rCrimson."
+  },
+  {
+    "PROPER_NAME": "Purify",
+    "NAMES": [
+      "purify"
+    ],
+    "DESCRIPTION": "Remove #rCrimson from an infected card."
+  },
+  {
     "PROPER_NAME": "Sharpened",
     "NAMES": [
       "sharpened"

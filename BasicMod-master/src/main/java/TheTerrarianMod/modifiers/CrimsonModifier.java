@@ -28,6 +28,7 @@ public class CrimsonModifier extends AbstractCardModifier {
     //private int MAGIC_BONUS  = 1;
     private Color CRIMSON_GLOW_COLOR = new Color(1.0F, 0.0F, 0.0F, 0.25F);
     private Color CRIMSON_CARD_COLOR = new Color(1.0F, 0.0F, 0.0F, 1.0F);
+    private Color ORIGINAL_GLOW_COLOR= new Color(0.2F, 0.9F, 1.0F, 0.25F);;
 
     public CrimsonModifier() {
     }
@@ -59,6 +60,17 @@ public class CrimsonModifier extends AbstractCardModifier {
     }
 
     @Override
+    public void onInitialApplication(AbstractCard card) {
+        card.glowColor = CRIMSON_GLOW_COLOR;
+        //card.superFlash(CRIMSON_CARD_COLOR);
+    }
+
+    @Override
+    public void onRemove(AbstractCard card) {
+        card.glowColor = ORIGINAL_GLOW_COLOR;
+    }
+
+    @Override
     public void onDrawn(AbstractCard card) {
         this.addToBot(new SpreadCrimsonAction(card));
         super.onDrawn(card);
@@ -71,7 +83,6 @@ public class CrimsonModifier extends AbstractCardModifier {
 
     @Override
      public void onRender(AbstractCard card, SpriteBatch sb) {
-       card.glowColor = CRIMSON_GLOW_COLOR;
        FontHelper.renderRotatedText(sb, FontHelper.cardTitleFont, card.name, card.current_x, card.current_y, 0.0F, 175.0F * card.drawScale * Settings.scale, card.angle, false, CRIMSON_CARD_COLOR);
      }
 
